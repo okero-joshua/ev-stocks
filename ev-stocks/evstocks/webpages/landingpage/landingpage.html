@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ev-stocks.com</title>
+    <link rel="icon" type="images/x-icon" href="images/greencar.png">
+    <!-- To create real time stock charts, you'll need an API. I think I'll use https://www.alphavantage.co/-->
+    <!-- Add CSS styling-->
+    <img src="" alt="">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="emailList.css">
+</head>
+<body>
+<h1 id="domainName">ev-stocks.com</h1>
+<div id="signUp">
+    <!--<button class="open-button" onclick="openForm()">Sign up</button>-->
+    <button class="open-button" id="open-button" onclick="openForm()">Join Email List</button>
+    <form id="email_form" name="email_form"
+          action="join.html" method="get">
+        <div class="formDiv">
+            <label for="email_1">Email Address:</label>
+            <input type="text" id="email_1" name="email_1">
+            <span id="email_1_error">*</span>
+        </div>
+
+        <div class="formDiv">
+            <label for="email_2">Confirm Email Address:</label>
+            <input type="text" id="email_2" name="email_2">
+            <span id="email_2_error">*</span>
+        </div>
+
+        <div class="formDiv">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <span id="first_name_error">*</span>
+        </div>
+
+        <div class="formDiv">
+            <label>&nbsp;</label>
+            <input type="submit" id="join_list" value="Join List">
+            <input type="button" id="clear_form" value="Clear Form">
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+    </form>
+</div>
+
+<main>
+
+        <div id="carGeographyNav">
+            <div class="dropdown">
+                <button class="dropbtn">American</button>
+                <div class="dropdown-content">
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AmericanCarCompanies/Tesla/Tesla.html">Tesla</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AmericanCarCompanies/Rivian/Rivian.html">Rivian</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AmericanCarCompanies/Lucid/Lucid.html">Lucid</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AmericanCarCompanies/Fisker/Fisker.html">Fisker</a>
+                </div>
+                <!--<a href="../Lucid.html">Sedans</a>-->
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Asian</button>
+                <div class="dropdown-content">
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AsianCarCompanies/Nio/Nio.html">Nio</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AsianCarCompanies/Xpev/Xpev.html">Xpev</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AsianCarCompanies/Li/Li.html">Li</a>
+                </div>
+                <!--<a href="../Lucid.html">Sedans</a>-->
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">European</button>
+                <div class="dropdown-content">
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/EuropeanCarCompanies/Polestar/Polestar.html">Polestar</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/EuropeanCarCompanies/Arrival/Arrival.html">Arrival</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/EuropeanCarCompanies/Volkswagen/Volkswagen.html">Volkswagen</a>
+                </div>
+                <!--<a href="../Lucid.html">Sedans</a>-->
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Charging</button>
+                <div class="dropdown-content">
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/ChargingCompanies/Blink/Blink.html">Blink</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/ChargingCompanies/Chargepoint/Chargepoint.html">ChargePoint</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/ChargingCompanies/Evbox/Evbox.html">Evbox</a>
+                    <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/ChargingCompanies/EvGo/EvGo.html">Evgo</a>
+                </div>
+                <!--<a href="../Lucid.html">Sedans</a>-->
+            </div>
+            <!--
+            <div ><a href="../Polestar.html">Trucks</a></div>
+            <div><a href="../Rivian.html">Buses</a></div>
+            <div><a href="../Rivian.html">Charging</a></div>
+            -->
+        </div>
+        <div id="mainDiv">
+        <!-- Div is for ev sector news-->
+        <div id="evsectornewsDiv">
+            <!--<h2 id="evSectorHeader">Today's EV Sector news</h2> -->
+            <a id="Tesla" href="https://finance.yahoo.com/news/tesla-doubles-discounts-model-3-002409554.html" id="Tesla">
+                    <img id="teslamodel3" src="images/tesla-model-3.jpg">
+                    <br>
+                Tesla Doubles Discounts on Model 3
+            </a>
+        </div>
+        <div id="lucidAstonMartin">
+            <a id="lucidAstonMartinArticle" href="https://www.marketwatch.com/story/lucid-stock-bounces-off-record-low-after-aston-martin-agrees-to-pay-232-million-as-part-of-supply-agreement-3fd794ba">
+                <img id="lcidSedan" src="images/lcid.png">
+                <br>
+                Lucid Bounces Back Due to Aston Martin Partnership
+            </a>
+        </div>
+            <div>
+                <a id="electrifyAmerica" href="https://electrek.co/2023/06/26/electrify-america-discounted-charging-lyft-drivers-all-stations-ev/">
+                    <img id="electrifyAmericaPic"src="images/Electrify-America-Lyft.webp">
+                    <br>
+                    Electrify America expands discounted EV charging for Lyft drivers
+                </a>
+            </div>
+            <div>
+                <a id="chinaTSLAkiller" href="https://www.wsj.com/articles/chinas-tesla-killer-stumbles-as-ev-price-war-takes-toll-beadc04c">
+                    <img id="nioteslaPic" src="images/niotesla.jpeg">
+                    <br>
+                    NIO Stumbles due to Price War
+                </a>
+            </div>
+            <div>
+                <a id="tslaCharging" href="https://www.usatoday.com/story/graphics/2023/06/24/teslas-electric-vehicle-ev-chargers-explained/70322921007/">
+                    <img id="tslaChargingPic" src="images/tslaCharging.webp">
+                    <br>
+                    Tesla Charging Adds to Companies Dominance
+                </a>
+            </div>
+            <div>
+                <a id="chinaEVBubblePop" href="https://www.bloomberg.com/news/features/2023-06-26/china-s-electric-vehicle-bubble-is-starting-to-deflate">
+                    <img id="chinaEVBubblePopPic" src="images/chinaEVsBubble.jpeg">
+                     <br>
+                    China EV Bubble Starts to Pop
+                </a>
+            </div>
+            <div>
+                <a id="chinaTaxRed" href="https://tribune.com.pk/story/2422936/china-unveils-72-billion-tax-break-for-green-cars">
+                    <img id="chinaTaxRedPic"src="images/chinaTaxRed.jpeg">
+                    <br>
+                    China unveils $72 billion tax break for EVs
+                </a>
+            </div>
+            <div>
+                <a id="chargPointParnerships" href="https://cleantechnica.com/2023/06/20/chargepoint-partnerships-growing-tesla-arval-ald-automotive/">
+                    <img id="chargePointParnershipsPic" src="images/chargePointPartnerships.jpeg">
+                    <br>
+                    ChargePoint Partners with Tesla and More.
+                </a>
+            </div>
+            <div>
+                <a id="arrivalProduction" href="https://techcrunch.com/2022/08/11/arrival-slashes-production-targets-to-just-20-ev-vans-as-part-of-restructuring/">
+                    <img id="arrivalProductionPic" src="images/arrivalProduction.webp">
+                    <br>
+                    Arrival Cuts 2023 Production Target
+                </a>
+            </div>
+            </div>
+    </main>
+    <script
+            src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+            crossorigin="anonymous"></script>
+<script src="landingpage.js"></script>
+<script src ="emailList.js"></script>
+</body>
+</html>
+
+

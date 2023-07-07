@@ -1,0 +1,61 @@
+-Take some ideas from https://insideevs.com/
+-Put all content in one div container and use grid display
+    -This works but the issue I have is that the image doesn't fit into
+    the dimensions of the column
+    -Continue: One thing I could consider is putting a pixelation restriction on
+    the width and height of each div rather than using fr that way the
+    web page doesn't look odd
+     -Populate the landing page so you have a good layout moving on.
+     -Make page content shift left
+-For now I think I need to create another row that populate the landing page
+-Since the page will focus on EVs. Then I think I should remove the
+macrosector idea. Overtime, I'll want to make it a simple webpage that laypeople
+can understand.
+-Continue:
+    -Start adding new HTMLs?
+        -I'm not sure how to do display the page and how the page should be displayed. So far
+        -i'm thinking production estimates,quarter results,new products, demand related things, PR news. Since i'll be working
+        on this web page myself, I don't think I should populate it too much, I think I should
+        put certain things for each company and change them as time goes
+        -I need to add a button that goes back to the home page
+    -Finish CSS vid, watch HTML,  then react
+    -PHP
+    -Create a drop down nav bar for the landing page, so if you hover over an icon
+    it will display a drop down menu
+    -This video might help with navBar idea
+    -React
+    -finish Udemy vids
+    -publish website by the end of next month
+-Web page changes: I decided to go with American, Chinese, European, Other. Going
+with Sedan, Trucks, Buses, Charging Companies would cause a lot of redundancies due
+to companies being in more than one category.
+-I have to give more thought to what I want the site to be about. I want to it to be more
+substantive. I think i could have it be a one stop location for articles related to evs. The
+crud aspect of the application could be people subscribing to?
+-Work on getting the nav bar centered
+-The approach i'm going to take for this is following the class. At least
+that way I'll have a good foundation on what i'm learning and can improve on that
+if i take an alternative approach it will be undirected and take up too much time
+because I won't know what i'm doing/or understand what i'm reading.I think I'll always
+have to take a general course that encompasses all the concepts superficially,
+then I'll have to take courses to get better at a particular concept.
+
+-Figure out what to populate the nav bar with. You may have to expand the scope/topics of the site
+    -American, Chinese, European, Companies that have both combustion and electric
+-They could be a list of links that you toggle over
+-Color all website headers black
+-Put lines/grids on page. I don't think a div can fit a whole page unless
+it's filled with content. So for now, just populate an organize both divs
+-You may have to align the MacroEncon news Header better. I doesn't have to be the same as the
+Personal consumption index header
+-Fill the landing page with more content
+-Attach other html pages to the main page
+-Add a HTML
+-How do I center and size the text under the Personal Consumption Expenditures?
+-Difference between link,img, and anchor.
+Notes:
+
+-What's the difference between anchor and href
+-Look into how to modify the nav bar
+
+Q:I'm not sure what I want to make this site about

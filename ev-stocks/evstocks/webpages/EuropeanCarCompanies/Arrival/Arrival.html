@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ev-stocks.com</title>
+    <link rel="icon" type="images/x-icon" href="/Users/m/Documents/ev-stocks/evstocks/webpages/landingpage/images/greencar.png">
+    <!-- To create real time stock charts, you'll need an API. I think I'll use https://www.alphavantage.co/-->
+    <!-- Add CSS styling-->
+    <img src="" alt="">
+    <link rel="stylesheet" href="Arrival.css">
+</head>
+<body>
+<h1 id="domainName">ev-stocks.com</h1>
+<div id="signUp">
+    <!--<button class="open-button" onclick="openForm()">Sign up</button>-->
+    <button class="open-button" id="open-button" onclick="openForm()">Join Email List</button>
+    <form id="email_form" name="email_form"
+          action="join.html" method="get">
+        <div class="formDiv">
+            <label for="email_1">Email Address:</label>
+            <input type="text" id="email_1" name="email_1">
+            <span id="email_1_error">*</span>
+        </div>
+
+        <div class="formDiv">
+            <label for="email_2">Confirm Email Address:</label>
+            <input type="text" id="email_2" name="email_2">
+            <span id="email_2_error">*</span>
+        </div>
+
+        <div class="formDiv">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <span id="first_name_error">*</span>
+        </div>
+
+        <div class="formDiv">
+            <label>&nbsp;</label>
+            <input type="submit" id="join_list" value="Join List">
+            <input type="button" id="clear_form" value="Clear Form">
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+    </form>
+</div>
+
+<main>
+
+    <div id="carGeographyNav">
+        <div id="homeButton">
+            <a style="text-decoration:none;" href="/Users/m/Documents/ev-stocks/evstocks/webpages/landingpage/landingpage.html">Home Page</a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">American</button>
+            <div class="dropdown-content">
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AmericanCarCompanies/Tesla/Tesla.html">Tesla</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AmericanCarCompanies/Rivian/Rivian.html">Rivian</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AmericanCarCompanies/Lucid/Lucid.html">Lucid</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AmericanCarCompanies/Fisker/Fisker.html">Fisker</a>
+            </div>
+            <!--<a href="../Lucid.html">Sedans</a>-->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Asian</button>
+            <div class="dropdown-content">
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AsianCarCompanies/Nio/Nio.html">Nio</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AsianCarCompanies/Xpev/Xpev.html">Xpev</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/AsianCarCompanies/Li/Li.html">Li</a>
+            </div>
+            <!--<a href="../Lucid.html">Sedans</a>-->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">European</button>
+            <div class="dropdown-content">
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/EuropeanCarCompanies/Polestar/Polestar.html">Polestar</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/EuropeanCarCompanies/Arrival/Arrival.html">Arrival</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/EuropeanCarCompanies/Volkswagen/Volkswagen.html">Volkswagen</a>
+            </div>
+            <!--<a href="../Lucid.html">Sedans</a>-->
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Charging</button>
+            <div class="dropdown-content">
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/ChargingCompanies/Blink/Blink.html">Blink</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/ChargingCompanies/Chargepoint/Chargepoint.html">ChargePoint</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/ChargingCompanies/Evbox/Evbox.html">Evbox</a>
+                <a href="/Users/m/Documents/ev-stocks/evstocks/webpages/ChargingCompanies/EvGo/EvGo.html">Evgo</a>
+            </div>
+            <!--<a href="../Lucid.html">Sedans</a>-->
+        </div>
+</main>
+<script src="Arrival.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+h1 {
+    color: blue;
+}
+.formDiv {
+    margin-bottom: 1em;
+
+}
+header{
+    display: grid;
+    justify-content: right;
+}
+#email_form {
+    margin-right: 10px;
+}
+label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+span {
+    color: red;
+}
+#email_form {
+    display: none;
+    /*position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;*/
+}

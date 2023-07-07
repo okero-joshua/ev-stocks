@@ -1,0 +1,212 @@
+body{
+    background-color: powderblue;
+
+}
+#mainDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    row-gap: 120px;
+    padding-top: 50px;
+    font-family: "Palatino";
+}
+/*
+header{
+    display: flex;
+}*/
+#domainName {
+    text-align: center;
+    color: limegreen;
+    font-family: "Palatino";
+}
+/*
+#signUp{
+    text-align: right;
+}
+#open-button{
+    text-align: right;
+}*/
+#carGeographyNav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: teal;
+}
+#carGeographyNav>*{
+    flex-basis: 100px;
+}
+
+#evsectornewsDiv{
+    grid-column: span 1;
+}
+#teslamodel3{
+    height: 100px;
+    width: 230px;
+}
+#lcidSedan{
+    height: 100px;
+    width: 230px;
+}
+#electrifyAmericaPic{
+    height: 100px;
+    width: 230px;
+}
+#nioteslaPic{
+    height: 100px;
+    width: 230px;
+}
+#tslaChargingPic{
+    height: 100px;
+    width: 230px;
+}
+#chinaEVBubblePopPic{
+    height: 100px;
+    width: 230px;
+}
+#chinaTaxRedPic{
+    height: 100px;
+    width: 230px;
+}
+#chargePointParnershipsPic{
+    height: 100px;
+    width: 230px;
+}
+#arrivalProductionPic{
+    height: 100px;
+    width: 230px;
+}
+/*Drop down button and hovering over the drop down to display other links
+*/
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/*
+#usretailstore {
+    height: 100px;
+    width: 230px;
+}
+#powell{
+    height: 100px;
+    width: 230px;
+}
+#macroHeader{
+    text-align: center;
+}*/
+/* Old css script
+body{
+    background-color: white;
+}
+#mainDiv{
+    display: grid;
+    gap: 5px;
+
+}
+#carGeographyNav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: teal;
+
+}
+#carGeographyNav>*{
+    flex-basis: 100px;
+}
+#macroeconnewsDiv{
+    float:right;
+    width: 50%;
+    align-content: center;
+    border: 2px solid black;
+}
+#evsectornewsDiv{
+    float:left;
+    width: 49%;
+    align-content: center;
+    border: 2px solid black;
+}
+#rateHikesDiv{
+    float:right;
+    width:47% ;
+    vertical-align: top;
+}
+#teslamodel3{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    align-content: center;
+}
+textarea{
+    text-align: center;
+}
+#usretailstore{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 320px;
+}
+
+#evSectorHeader{
+    text-align: center;
+}
+#retailDiv,#macroeconnewsDiv{
+    text-align: left;
+    position: relative;
+    float: left;
+    vertical-align: top;
+
+}
+nav {
+    display: flex;
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 250px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2px 10%;
+}
+
+ */
+
